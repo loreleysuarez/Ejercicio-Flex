@@ -23,14 +23,26 @@ header {
   color: var(--white);
   padding: 0.5rem 1.25rem;
   /*Añadimos flex*/
+  display: flex;
+  /*flex-direction: row; */
+  justify-content: space-between;
+  
 }
 
 header nav ul {
   /*Añadimos flex*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 
 header .header__logo {
   /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  
 }
 
 header .header__logo span,
@@ -50,6 +62,9 @@ main {
 
 main .container {
   /*Añadimos flex*/
+  display: flex;
+  justify-content: center;
+  
 }
 
 main section .card {
@@ -72,6 +87,7 @@ main section .podio {
   background: #fff;
   font-weight: bold;
   /*Añadimos flex*/
+  display: flex;
 }
 main section .podio h3 {
   color: var(--red);
@@ -88,6 +104,7 @@ main section .podio h3 {
 
 .top5 {
   /*Añadimos flex*/
+  display: flex;
 }
 
 .top5 .podio__pizzas ol li {
@@ -97,23 +114,34 @@ main section .podio h3 {
 .top5 .podio__img {
   padding-bottom: 60px;
   /*Añadimos flex*/
+  display: flex;
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
   /*Añadimos flex*/
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
   /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  
+
 }
 
 footer ul {
   color: var(--lightWhite);
   /*Añadimos flex*/
+  display: flex;
+  flex-direction: column
+  
 }
 
 @media screen and (max-width:  768px) {
